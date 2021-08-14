@@ -1,0 +1,83 @@
+.grid {
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 60vh;
+    height: 80vw;
+    max-height: 60vh;
+    font-size: 1rem;
+}
+.row {
+    display: flex;
+}
+.box {
+    background-image: url("water.jpg");
+    object-fit: fill;
+    margin: 2px;
+    color: white;
+    font-weight: bold;
+    flex: 1 0 auto;
+    position: relative;
+}
+
+.box:hover {
+    filter: grayscale(50%);
+    opacity: 1;
+}
+
+.box:after {
+    content: "";
+    float:left;
+    display: block;
+    padding-top: 100%;
+}
+.box .inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hit {
+    background-image: url("exp.png");
+    margin: 2px;
+    color: black;
+    font-weight: bold;
+    flex: 1 0 auto;
+    position: relative;
+}
+
+.hit:after {
+    content: "";
+    float:left;
+    display: block;
+    padding-top: 100%;
+}
+.hit .inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    text-align: center;
+    height: 5em;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.score {
+    padding-top: 100px;
+    text-align: center;
+    width: auto;
+}
